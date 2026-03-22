@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邯郸市活动执行 | 活动设备租赁 | 舞台搭建服务 | 灯光大屏音响</title>
+    <meta name="description" content="专业的邯郸市活动执行服务，提供活动设备租赁、舞台搭建、灯光音响、桁架租赁等一站式活动物料解决方案，为各类活动提供高品质的物料支持。">
+    <meta name="keywords" content="邯郸市活动执行,活动设备租赁,舞台搭建,桁架租赁,灯光音响,活动物料,邯郸市活动服务">
+    <meta name="author" content="邯郸市活动执行团队">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://www.example.com/index.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 内联数据区 -->
+    <script>
+                    const materialsData = [ 
+                {
+                    "id": 1,
+                    "name": "中房东昌府地产开放仪式",
+                    "category": "地产活动",
+                    "scenario": "中房东昌府地产开放仪式在邯郸市核心区域隆重举行。活动吸引了众多购房者和投资人士参与，现场展示了项目的核心优势和未来发展前景，为邯郸房地产市场注入新活力。",
+                    "image_urls": [
+                    "https://i.postimg.cc/h4yN5J4w/2022_03_31中房东昌府地产项目_(17).jpg",
+                    "https://i.postimg.cc/CMP9QZMr/2022_03_31中房东昌府地产项目_(18).jpg",
+                    "https://i.postimg.cc/jqgBFWqk/2022_03_31中房东昌府地产项目_(22).jpg"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "魅克街舞公演项目",
+                    "category": "文化演出",
+                    "scenario": "魅克街舞公演项目在邯郸市精彩上演。活动汇聚了众多艺术爱好者和专业演员，通过精彩的表演展现了当代文化魅力，为观众带来了一场视觉盛宴。",
+                    "image_urls": [
+                    "https://i.postimg.cc/fW21r3W1/2022_08_13魅克街舞项目_(10).jpg",
+                    "https://i.postimg.cc/c4vPys6j/2022_08_13魅克街舞项目.jpg",
+                    "https://i.postimg.cc/FFWwBfs5/2022_08_13魅克街舞项目_(24).jpg"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "五粮液私享会",
+                    "category": "商务宴请",
+                    "scenario": "五粮液私享会在邯郸市高端酒店私密举行。活动邀请了各界精英人士参与，通过产品品鉴和深度交流，进一步提升了品牌在邯郸市场的影响力和美誉度，促进了商务合作。",
+                    "image_urls": [
+                    "https://i.postimg.cc/wT1n8678/2022_09_05五粮液酒私享会项目_(12).jpg",
+                    "https://i.postimg.cc/YqvTKpj5/2022_09_05五粮液酒私享会项目_(8).jpg",
+                    "https://i.postimg.cc/4NYjkJmT/2022_10_24五粮液私享会项目_(61).jpg"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "涉县马拉松",
+                    "category": "体育赛事",
+                    "scenario": "涉县马拉松在风景优美的赛道上成功举办。赛事吸引了来自全国各地的跑步爱好者参与，选手们在比赛中展现了顽强拼搏的体育精神，推动了当地全民健身运动的发展，提升了城市知名度。",
+                    "image_urls": [
+                    "https://i.postimg.cc/gkx1FYnh/2025_05_10涉县半程马拉松项目_(14).jpg",
+                    "https://i.postimg.cc/xTXBD0c9/2025_05_10涉县半程马拉松项目_(4).jpg",
+                    "https://i.postimg.cc/J4SvR9kz/2025_05_10涉县半程马拉松项目_(6).jpg"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "name": "邢台巨鹿公园开放",
+                    "category": "公益活动",
+                    "scenario": "邢台巨鹿公园开放在当地隆重举行。活动旨在改善居民生活环境，提供优质公共服务，得到了政府部门和市民的大力支持和积极参与，为建设美丽城市、和谐社区贡献了重要力量。",
+                    "image_urls": [
+                    "https://i.postimg.cc/xTBh9Wzv/2025_06_15邢台巨鹿水上公园项目_(19).jpg",
+                    "https://i.postimg.cc/7Yjdqp2b/2025_06_15邢台巨鹿水上公园项目_(3).jpg",
+                    "https://i.postimg.cc/sDMbdVv1/2025_06_15邢台巨鹿水上公园项目_(2).jpg"
+                    ]
+                },
+                {
+                    "id": 6,
+                    "name": "河北省牌联赛",
+                    "category": "体育赛事",
+                    "scenario": "河北省牌联赛在邯郸市体育场馆顺利举办。赛事遵循公平公正的原则，为参赛选手提供了专业的竞技平台，吸引了众多观众到场观看，促进了河北省相关体育项目的发展和交流。",
+                    "image_urls": [
+                    "https://i.postimg.cc/wTR440Gt/邯郸道全民棋牌.jpg",
+                    "https://i.postimg.cc/65FgBDvj/2025_10_23_2邯郸道全民棋牌联赛_(11).jpg",
+                    "https://i.postimg.cc/qMWSp93G/2025_10_23_2邯郸道全民棋牌联赛_(1).jpg"
+                    ]
+                },
+                {
+                    "id": 7,
+                    "name": "邯郸U18青少年足球挑战赛",
+                    "category": "体育赛事",
+                    "scenario": "邯郸U18青少年足球挑战赛在邯郸市专业足球场隆重举行。赛事汇聚了众多青少年足球爱好者，通过激烈的比赛展现了青少年足球运动的活力，为培养足球后备人才提供了良好平台，推动了足球运动的普及。",
+                    "image_urls": [
+                    "https://i.postimg.cc/pTV3g1Cy/default_(1).png",
+                    "https://i.postimg.cc/wBQS4dhS/webwxgetmsgimg.png",
+                    "https://i.postimg.cc/1zrjcXYj/u181.png"
+                    ]
+                },
+                {
+                    "id": 8,
+                    "name": "一汽大众新媒体沙龙",
+                    "category": "商业活动",
+                    "scenario": "一汽大众新媒体沙龙在邯郸市商业中心成功举办。活动通过丰富的促销手段和互动体验，吸引了大量消费者参与，有效提升了销售额，增强了品牌与消费者之间的联系，取得了良好的商业效果。",
+                    "image_urls": [
+                    "https://i.postimg.cc/VNZHHpmW/一汽大众沙龙_(3).jpg",
+                    "https://i.postimg.cc/SK1tt3kr/一汽大众沙龙.jpg",
+                    "https://i.postimg.cc/N0CPPSB9/一汽大众沙龙_(2).jpg"
+                    ]
+                },
+                {
+                    "id": 9,
+                    "name": "五粮液新品发布会",
+                    "category": "商业活动",
+                    "scenario": "五粮液新品发布会在邯郸市高端场馆举行。活动通过产品展示、技术讲解等形式，向市场全面介绍了新产品的特点和优势，吸引了众多媒体和消费者关注，提升了品牌市场竞争力。",
+                    "image_urls": [
+                    "https://i.postimg.cc/x1RZLqZF/五粮液新品发1.png",
+                    "https://i.postimg.cc/Pq5RyTGR/五粮液新品发布会1.png",
+                    "https://i.postimg.cc/s2gNmsF8/五粮液新品发布会2.png"
+                    ]
+                },
+                {
+                    "id": 10,
+                    "name": "京东家电焕新季",
+                    "category": "商业活动",
+                    "scenario": "京东家电焕新季在邯郸市商业中心成功举办。活动通过丰富的促销手段和互动体验，吸引了大量消费者参与，有效提升了销售额，增强了品牌与消费者之间的联系，取得了良好的商业效果。",
+                    "image_urls": [
+                    "https://i.postimg.cc/dtdPZsvp/京东家电焕新季.png",
+                    "https://i.postimg.cc/vZsRWJZw/京东家电焕新季1.png",
+                    "https://i.postimg.cc/5NvdQ41r/京东家电焕新季2.png"
+                    ]
+                },
+                {
+                    "id": 11,
+                    "name": "企业项目集中开工",
+                    "category": "政企会议",
+                    "scenario": "企业项目集中开工在邯郸市政务中心隆重举行。活动汇聚了政府相关部门领导和企业代表，通过政策解读、项目对接等环节，为企业发展提供了政策支持和资源保障，推动了地方经济发展。",
+                    "image_urls": [
+                    "https://i.postimg.cc/j59mC9F8/企业集中开工.png",
+                    "https://i.postimg.cc/Kz4CGFJs/企业集中开工1.png",
+                    "https://i.postimg.cc/dtGpt5jw/数字经济产业园开工仪式2.png"
+                    ]
+                },
+                {
+                    "id": 12,
+                    "name": "全国煤炭产运大会",
+                    "category": "行业会议",
+                    "scenario": "全国煤炭产运大会在邯郸市会议中心举行。活动汇聚了行业内专家学者、企业代表，通过主题演讲、圆桌论坛等形式，深入探讨了行业发展趋势和热点问题，为行业健康发展提供了智力支持和交流平台。",
+                    "image_urls": [
+                    "https://i.postimg.cc/ZYBXXb9B/全国煤炭产运大会.png",
+                    "https://i.postimg.cc/NG3Zc3TM/全国煤炭产运大会1.png",
+                    "https://i.postimg.cc/3xBq2WqZ/全国煤炭产运大会3.png"
+                    ]
+                },
+                {
+                    "id": 13,
+                    "name": "和美乡村健康跑",
+                    "category": "体育赛事",
+                    "scenario": "和美乡村健康跑在风景优美的赛道上成功举办。赛事吸引了来自全国各地的跑步爱好者参与，选手们在比赛中展现了顽强拼搏的体育精神，推动了当地全民健身运动的发展，提升了城市知名度。",
+                    "image_urls": [
+                    "https://i.postimg.cc/wMy2Pj0Y/和美乡村健康跑3.png",
+                    "https://i.postimg.cc/QMmfKPHJ/和美乡村健康跑1.png",
+                    "https://i.postimg.cc/DZzBrgGG/和美乡村健康跑2.png"
+                    ]
+                },
+                {
+                    "id": 14,
+                    "name": "城市人家装饰年会",
+                    "category": "企业活动",
+                    "scenario": "城市人家装饰年会在邯郸市高端酒店举行。活动总结了企业年度发展成果，表彰了优秀员工，通过丰富多彩的文艺节目和互动环节，增强了员工凝聚力和归属感，为企业未来发展注入了新动力。",
+                    "image_urls": [
+                    "https://i.postimg.cc/cJBbMC5k/城市人家装饰晚宴.png",
+                    "https://i.postimg.cc/jj4FQ2kc/城市人家装饰晚宴2.png",
+                    "https://i.postimg.cc/vTc2sz8n/城市人家装饰晚宴3.png"
+                    ]
+                },
+                 {
+                "id": 5,
+                "name": "“冀农乐”村舞大赛",
+                "category": "文化活动",
+                "scenario": "“冀农乐”村舞大赛在邯郸市文化广场或场馆举行。活动通过丰富多彩的文化形式，展现了地方文化特色和时代精神，吸引了众多市民参与，丰富了群众精神文化生活，促进了文化传承与发展。",
+                "image_urls": [
+                "https://i.postimg.cc/Xqp1b8N9/大名县村舞大赛.png",
+                "https://i.postimg.cc/NF5Cc4G8/大名县村舞大赛1.png",
+                "https://i.postimg.cc/G2MgVNRz/大名县村舞大赛2.png"
+                ]
+                 },
+                {
+                    "id": 16,
+                    "name": "天鸿跨年",
+                    "category": "节庆活动",
+                    "scenario": "天鸿跨年活动在邯郸市商业中心举行。活动通过灯光秀、文艺表演、倒计时等形式，吸引了大量市民参与，营造了欢乐祥和的跨年氛围，为市民带来了难忘的节日体验。",
+                    "image_urls": [
+                    "https://i.postimg.cc/KY8HfxSz/天鸿跨年.png",
+                    "https://i.postimg.cc/VNkVgmQd/天鸿跨年1.png",
+                    "https://i.postimg.cc/KY8HfxSz/天鸿跨年.png"
+                    ]
+                },
+                {
+                    "id": 17,
+                    "name": "工程大学高校音乐大赛",
+                    "category": "教育活动",
+                    "scenario": "工程大学高校音乐大赛在校园内成功举办。活动围绕艺术培养、学术交流等主题展开，为师生提供了展示才华、交流学习的平台，丰富了校园文化生活，推动了学校素质教育的发展。",
+                    "image_urls": [
+                    "https://i.postimg.cc/fWrgv6BZ/工程大学高校音乐大赛.png",
+                    "https://i.postimg.cc/1RjYKLJS/工程大学高校音乐大赛2.png",
+                    "https://i.postimg.cc/hv6yPdff/工程大学高校音乐大赛3.png"
+                    ]
+                },
+                {
+                    "id": 18,
+                    "name": "广平县人才招聘",
+                    "category": "招聘活动",
+                    "scenario": "广平县人才招聘活动在广平县人力资源市场举行。活动汇聚了众多用人单位和求职者，通过现场招聘、政策咨询等服务，为用人单位和求职者搭建了高效的对接平台，有效缓解了就业压力，促进了人才合理流动。",
+                    "image_urls": [
+                    "https://i.postimg.cc/qM6DDj5d/广平县人才招聘1.png",
+                    "https://i.postimg.cc/qM6DDj5d/广平县人才招聘1.png",
+                    "https://i.postimg.cc/mgxXvCvN/广平县人才招聘2.png"
+                    ]
+                },
+                {
+                    "id": 19,
+                    "name": "曲周县天下街悦享城开业仪式",
+                    "category": "商业活动",
+                    "scenario": "曲周县天下街悦享城开业仪式在邯郸市商业核心区域隆重举行。活动吸引了众多市民和投资者关注，现场氛围热烈，为新项目的发展奠定了良好基础，进一步丰富了当地商业业态。",
+                    "image_urls": [
+                    "https://i.postimg.cc/J0kgXxwn/曲周县天下街悦享城开业仪式项目_(11).jpg",
+                    "https://i.postimg.cc/1RkbQk65/曲周县天下街悦享城开业仪式项目_(69).jpg",
+                    "https://i.postimg.cc/sxh8WmF4/曲周天下街开业.png"
+                    ]
+                },
+                {
+                    "id": 20,
+                    "name": "曲周春节联欢晚会",
+                    "category": "文化活动",
+                    "scenario": "曲周春节联欢晚会在邯郸市文化广场或场馆举行。活动通过丰富多彩的文化形式，展现了地方文化特色和时代精神，吸引了众多市民参与，丰富了群众精神文化生活，促进了文化传承与发展。",
+                    "image_urls": [
+                    "https://i.postimg.cc/ZRg20gM2/曲周春晚_(1).jpg",
+                    "https://i.postimg.cc/NMVSLVzZ/曲周春晚_(2).jpg",
+                    "https://i.postimg.cc/ZRg20gM2/曲周春晚_(1).jpg"
+                    ]
+                },
+                {
+                    "id": 21,
+                    "name": "武安学校誓师大会",
+                    "category": "教育活动",
+                    "scenario": "武安学校誓师大会在学校操场隆重举行。活动旨在激发学生学习动力，明确学习目标，通过师生代表发言、宣誓等环节，营造了积极向上的学习氛围，为学生备考或成长奠定了良好基础。",
+                    "image_urls": [
+                    "https://i.postimg.cc/XvYzL4SX/武安学校誓师大会.png",
+                    "https://i.postimg.cc/KYpsswxx/武安学校誓师大会2.png",
+                    "https://i.postimg.cc/CKr66XSL/武安学校誓师大会3.png"
+                    ]
+                },
+                {
+                    "id": 22,
+                    "name": "河北盛兆竣工投产仪式",
+                    "category": "企业活动",
+                    "scenario": "河北盛兆竣工投产仪式在企业园区隆重举行。活动标志着企业发展进入新阶段，得到了政府部门、合作伙伴的祝贺和支持，为企业后续发展创造了良好条件，推动了地方经济建设。",
+                    "image_urls": [
+                    "https://i.postimg.cc/Y2vwkNs8/河北盛兆竣工投产仪式1.png",
+                    "https://i.postimg.cc/y62CNgqJ/河北盛兆竣工投产仪式3.png",
+                    "https://i.postimg.cc/J0fxWC2t/河北盛兆竣工投产仪式项目_(20).jpg"
+                    ]
+                },
+                {
+                    "id": 23,
+                    "name": "河北省眼科年会",
+                    "category": "行业会议",
+                    "scenario": "河北省眼科年会在邯郸市会议中心举行。活动汇聚了行业内专家学者、企业代表，通过主题演讲、圆桌论坛等形式，深入探讨了行业发展趋势和热点问题，为行业健康发展提供了智力支持和交流平台。",
+                    "image_urls": [
+                    "https://i.postimg.cc/rsBjL2PM/河北省眼科年会.png",
+                    "https://i.postimg.cc/kG0sdPpJ/河北省眼科年会1.png",
+                    "https://i.postimg.cc/j2pcrYFw/河北省眼科年会2.png"
+                    ]
+                },
+                {
+                    "id": 24,
+                    "name": "泽信控股30周年",
+                    "category": "企业活动",
+                    "scenario": "泽信控股30周年庆典活动在邯郸市隆重举行。活动回顾了企业发展历程，展示了企业发展成就，邀请了合作伙伴、员工代表共同参与，进一步提升了企业品牌形象，为未来发展奠定了坚实基础。",
+                    "image_urls": [
+                    "https://i.postimg.cc/76CQv9Zj/泽信控股30周年.png",
+                    "https://i.postimg.cc/0jDWjNmp/泽信控股30周年1.png",
+                    "https://i.postimg.cc/tJWSJgPY/泽信控股30周年2.png"
+                    ]
+                },
+                {
+                    "id": 25,
+                    "name": "码头庙会",
+                    "category": "节庆活动",
+                    "scenario": "码头庙会活动在邯郸市举行。活动结合传统节日特色，通过丰富多彩的活动形式，吸引了众多市民参与，传承了优秀传统文化，丰富了市民节日生活。",
+                    "image_urls": [
+                    "https://i.postimg.cc/Sxh0WBxs/码头庙会.png",
+                    "https://i.postimg.cc/y8HqFM8x/码头庙会2.png",
+                    "https://i.postimg.cc/g2W9vC2w/码头庙会3.png"
+                    ]
+                },
+                {
+                    "id": 26,
+                    "name": "邯郸美乐城年货大集",
+                    "category": "商业活动",
+                    "scenario": "邯郸美乐城年货大集在邯郸市商业中心成功举办。活动通过丰富的促销手段和互动体验，吸引了大量消费者参与，有效提升了销售额，增强了品牌与消费者之间的联系，取得了良好的商业效果。",
+                    "image_urls": [
+                    "https://i.postimg.cc/Dwd95xS4/美乐城年货大集.png",
+                    "https://i.postimg.cc/Dwd95xSf/美乐城年货大集_(2).png",
+                    "https://i.postimg.cc/Dwd95xS4/美乐城年货大集.png"
+                    ]
+                },
+                {
+                    "id": 27,
+                    "name": "齐鲁银行运动会",
+                    "category": "体育赛事",
+                    "scenario": "齐鲁银行运动会在邯郸市体育场馆顺利举办。赛事遵循公平公正的原则，为参赛选手提供了专业的竞技平台，吸引了众多观众到场观看，促进了河北省相关体育项目的发展和交流。",
+                    "image_urls": [
+                    "https://i.postimg.cc/Dwd95xS1/齐鲁银行运动会2.png",
+                    "https://i.postimg.cc/gJr1zdNL/齐鲁银行运动会1.png",
+                    "https://i.postimg.cc/DZmRvFBt/齐鲁银行运动会3.png"
+                    ]
+                },
+                {
+                    "id": 28,
+                    "name": "锦河湾中秋节",
+                    "category": "节庆活动",
+                    "scenario": "锦河湾中秋节活动在邯郸市隆重举行。活动融入了传统节日元素，通过文艺表演、民俗展示、互动体验等形式，营造了浓厚的节日氛围，让市民感受到传统文化魅力，增强了节日幸福感。",
+                    "image_urls": [
+                    "https://i.postimg.cc/59DWtYcS/锦河湾中秋节.png",
+                    "https://i.postimg.cc/SN8FYSqM/锦河湾中秋节1.png",
+                    "https://i.postimg.cc/Qx5GK8sq/锦河湾中秋节项目.jpg"
+                    ]
+                },
+                {
+                    "id": 29,
+                    "name": "邯郸家博会",
+                    "category": "商业活动",
+                    "scenario": "邯郸家博会在邯郸市商业中心成功举办。活动通过丰富的促销手段和互动体验，吸引了大量消费者参与，有效提升了销售额，增强了品牌与消费者之间的联系，取得了良好的商业效果。",
+                    "image_urls": [
+                    "https://i.postimg.cc/BnxY4ts3/邯郸家博会.png",
+                    "https://i.postimg.cc/y8FQsWB1/邯郸家博会2.png",
+                    "https://i.postimg.cc/W485qKhX/邯郸家博会3.png"
+                    ]
+                }
+            ];
+
+
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- 顶部导航栏 -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-gray-900">活动GO</h1>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">首页</a>
+                    <a href="cases.html" class="text-blue-600 hover:text-blue-700 font-medium">案例展示</a>
+                    <a href="rental.html" class="text-gray-700 hover:text-blue-600 font-medium">设备物料</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+   <!-- 主要内容区域  -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- 搜索和筛选区域 -->
+        <div class="mb-6 space-y-4">
+            <div class="relative max-w-md">
+                <input id="searchInput" type="text" placeholder="搜索活动案例名称..." 
+                    class="pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent w-full">
+                <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+            </div>
+            <div class="flex flex-wrap gap-2">
+                <button class="category-filter px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors" type="button" data-category="all">全部</button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" type="button" data-category="体育赛事">体育赛事</button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" type="button" data-category="商业活动">商业活动</button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" type="button" data-category="文化活动">文化活动</button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" type="button" data-category="教育活动">教育活动</button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" type="button" data-category="企业活动">企业活动</button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" type="button" data-category="节庆活动">节庆活动</button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" type="button" data-category="政企会议">政企会议</button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" type="button" data-category="公益活动">公益活动</button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" type="button" data-category="招聘活动">招聘活动</button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors" type="button" data-category="地产活动">地产活动</button>
+            </div>
+        </div>
+
+        <!-- 案例展示区域 -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <!-- 案例网格 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="materialsGrid">
+                <!-- 案例卡片将通过JavaScript生成 -->
+            </div>
+        </div>
+    </main>
+
+  <!-- SEO内容区域
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-8">邯郸市活动执行服务优势</h2>
+                <div class="prose max-w-3xl mx-auto">
+                    <p>邯郸市活动执行团队专注于为各类活动提供专业的物料支持和执行服务，我们的优势包括：</p>
+                    <ul>
+                        <li><strong>丰富的经验</strong>：多年从事活动物料租赁和执行服务，积累了丰富的行业经验。</li>
+                        <li><strong>专业的设备</strong>：拥有齐全的舞台搭建、音响灯光等设备，确保活动质量。</li>
+                        <li><strong>优质的服务</strong>：提供从策划到执行的一站式服务，为客户省心省力。</li>
+                        <li><strong>合理的价格</strong>：透明的价格体系，为客户提供高性价比的服务。</li>
+                        <li><strong>快速的响应</strong>：及时响应客户需求，确保活动顺利进行。</li>
+                    </ul>
+                    <p>我们服务的活动类型包括：企业年会、文艺演出、展览展示、发布会、庆典活动等。无论活动规模大小，我们都能为您提供专业的支持和服务。</p>
+                    <p>如果您需要邯郸市活动执行、活动设备租赁、舞台搭建等服务，欢迎随时联系我们，我们将为您提供最适合的解决方案。</p>
+                </div>
+            </div>
+        </section> 
+        -->
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">邯郸市活动执行 | 活动设备租赁 | 舞台搭建服务 | 灯光大屏音响</h3>
+                    <p class="text-gray-300 mb-4">专业的活动物料租赁与执行服务，为各类活动提供高品质的物料支持。</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">服务项目</h3>
+                    <ul class="space-y-2">
+                        <li><a href="huodonggo.com" class="text-gray-300 hover:text-white">舞台搭建</a></li>
+                        <li><a href="huodonggo.com" class="text-gray-300 hover:text-white">活动设备租赁</a></li>
+                        <li><a href="huodonggo.com" class="text-gray-300 hover:text-white">活动执行</a></li>
+                        <li><a href="huodonggo.com" class="text-gray-300 hover:text-white">桁架租赁</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">联系方式</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> 邯郸市邯山区</li>
+                        <li class="flex items-center"><i class="fas fa-phone mr-2"></i> 微信同号 182-3100-3133</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> 619213143@qq.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2026 邯郸市活动执行 | 活动设备租赁 | 舞台搭建服务 | 灯光大屏音响</p>
+                <p class="text-gray-400 text-sm mt-2">网站地图 | 隐私政策 | 服务条款</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 结构化数据标记 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "邯郸市舞台活动执行",
+      "image": "https://picsum.photos/seed/event/800/500",
+      "telephone": "18231003133",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "邯郸市邯山区",
+        "addressLocality": "邯郸市",
+        "addressRegion": "河北省",
+        "postalCode": "056000",
+        "addressCountry": "中国"
+      },
+      "description": "专业的邯郸市活动执行服务，提供活动设备租赁、舞台搭建、灯光音响租赁、桁架租赁等一站式活动物料解决方案",
+      "openingHours": "Mo-Fr 00:00-24:00",
+      "services": [
+        {
+          "@type": "Service",
+          "name": "舞台搭建",
+          "description": "专业的舞台搭建服务，包括雷亚架、铝合金舞台、异形舞台等"
+        },
+        {
+          "@type": "Service",
+          "name": "活动设备租赁",
+          "description": "提供各类活动设备租赁，包括音响设备、灯光设备、桁架系统等"
+        },
+        {
+          "@type": "Service",
+          "name": "活动执行",
+          "description": "专业的活动执行团队，提供从策划到执行的一站式服务"
+        }
+        {
+          "@type": "Service",
+          "name": "灯光音响大屏",
+          "description": "灯光音响大屏服务，为各类活动提供高品质的灯光音响支持"
+        }
+      ],
+      "url": "https://www.example.com"
+    }
+    </script>
+    <script>
+        // 全局变量
+        let currentCategory = 'all';
+        let currentSearchTerm = '';
+
+        // 生成案例卡片
+        function generateMaterialCards(materials) {
+            const grid = document.getElementById('materialsGrid');
+            grid.innerHTML = '';
+            
+            materials.forEach(material => {
+                const card = document.createElement('div');
+                card.className = 'bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300';
+                
+                // 为每个案例创建轮播图
+                let carouselHtml = `
+                    <div class="relative h-48">
+                        <div class="case-carousel flex transition-transform duration-500 ease-in-out h-full">
+                `;
+                
+                // 添加三张图片到轮播
+                material.image_urls.forEach((imageUrl, index) => {
+                    carouselHtml += `
+                        <div class="flex-shrink-0 w-full h-full">
+                            <img src="${imageUrl}" alt="${material.name}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105 cursor-pointer" onclick="openImageModal('${imageUrl}')">
+                        </div>
+                    `;
+                });
+                
+                carouselHtml += `
+                        </div>
+                        <div class="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full">${material.category}</div>
+                        <!-- 轮播控制按钮 -->
+                        <button class="prev-btn absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-1 shadow-md z-10">
+                            <i class="fas fa-chevron-left text-gray-800 text-sm"></i>
+                        </button>
+                        <button class="next-btn absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-1 shadow-md z-10">
+                            <i class="fas fa-chevron-right text-gray-800 text-sm"></i>
+                        </button>
+                        <!-- 轮播指示器 -->
+                        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-1 z-10">
+                `;
+                
+                // 添加指示器
+                material.image_urls.forEach((_, index) => {
+                    carouselHtml += `
+                        <button class="w-2 h-2 rounded-full transition-colors ${index === 0 ? 'bg-blue-600' : 'bg-white/50 hover:bg-white/80'}" data-index="${index}"></button>
+                    `;
+                });
+                
+                carouselHtml += `
+                        </div>
+                    </div>
+                `;
+                
+                // 卡片内容
+                card.innerHTML = `
+                    ${carouselHtml}
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">${material.name}</h3>
+                        <p class="text-sm text-gray-600">${material.scenario}</p>
+                    </div>
+                `;
+                
+                grid.appendChild(card);
+                
+                // 初始化轮播功能
+                initCaseCarousel(card, material.image_urls.length);
+            });
+        }
+
+        // 初始化案例轮播
+        function initCaseCarousel(card, imageCount) {
+            const carousel = card.querySelector('.case-carousel');
+            const prevBtn = card.querySelector('.prev-btn');
+            const nextBtn = card.querySelector('.next-btn');
+            const indicatorsContainer = card.querySelector('.relative.h-48 .absolute.bottom-2');
+            const indicators = indicatorsContainer.querySelectorAll('button');
+            let currentIndex = 0;
+            
+            // 确保轮播容器有正确的样式
+            const carouselContainer = card.querySelector('.relative.h-48');
+            carouselContainer.style.overflow = 'hidden';
+            
+            // 更新轮播位置
+            function updateCarousel() {
+                carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+                
+                // 更新指示器状态
+                indicators.forEach((indicator, index) => {
+                    indicator.className = `w-2 h-2 rounded-full transition-colors ${index === currentIndex ? 'bg-blue-600' : 'bg-white/50 hover:bg-white/80'}`;
+                });
+            }
+            
+            // 上一张
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    currentIndex = (currentIndex - 1 + imageCount) % imageCount;
+                    updateCarousel();
+                });
+            }
+            
+            // 下一张
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % imageCount;
+                    updateCarousel();
+                });
+            }
+            
+            // 指示器点击
+            if (indicators.length > 0) {
+                indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', () => {
+                        currentIndex = index;
+                        updateCarousel();
+                    });
+                });
+            }
+        }
+
+        // 筛选物料
+        function filterMaterials() {
+            let filteredMaterials = materialsData.filter(material => {
+                const matchesCategory = currentCategory === 'all' || material.category === currentCategory;
+                const matchesSearch = material.name.toLowerCase().includes(currentSearchTerm);
+                return matchesCategory && matchesSearch;
+            });
+            generateMaterialCards(filteredMaterials);
+        }
+
+        // 搜索物料
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            currentSearchTerm = e.target.value.trim().toLowerCase();
+            filterMaterials();
+        });
+
+        // 分类筛选
+        document.querySelectorAll('.category-filter').forEach(button => {
+            button.addEventListener('click', function() {
+                // 更新按钮样式
+                document.querySelectorAll('.category-filter').forEach(btn => {
+                    btn.className = 'category-filter px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors';
+                });
+                this.className = 'category-filter px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors';
+                
+                // 更新当前分类
+                currentCategory = this.dataset.category;
+                filterMaterials();
+            });
+        });
+
+        // 打开图片模态框
+        function openImageModal(imageUrl) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageUrl;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // 防止背景滚动
+        }
+
+        // 关闭图片模态框
+        function closeImageModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = ''; // 恢复背景滚动
+        }
+
+        // 初始化页面
+        document.addEventListener('DOMContentLoaded', function() {
+            filterMaterials();
+            
+            // 关闭模态框事件
+            document.getElementById('closeModal').addEventListener('click', closeImageModal);
+            
+            // 点击模态框背景关闭
+            document.getElementById('imageModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeImageModal();
+                }
+            });
+        });
+    </script>
+    <!-- 图片放大模态框 -->
+    <div id="imageModal" class="fixed inset-0 bg-black/80 z-50 flex items-center justify-center hidden">
+        <div class="relative max-w-4xl max-h-[90vh]">
+            <img id="modalImage" src=" " alt="放大图片" class="max-w-full max-h-[90vh] object-contain">
+            <button id="closeModal" class="absolute top-4 right-4 bg-white/80 hover:bg-white rounded-full p-2 shadow-md" >
+                <i class="fas fa-times text-gray-800"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- 漂浮二维码 -->
+    <div class="fixed bottom-8 right-8 z-50 bg-white p-4 rounded-lg shadow-lg border border-gray-200 animate-bounce">
+        <div class="text-center mb-2">
+            <p class="text-sm font-medium text-gray-700">扫一扫加好友</p>
+        </div>
+        <div class="bg-gray-100 p-2 rounded">
+            <img src="https://i.postimg.cc/htqXJYp8/微信二维码.png" alt="微信二维码" class="w-32 h-32">
+        </div>
+        <div class="text-center mt-2">
+            <p class="text-xs text-gray-500">微信：yuanyanbo</p>
+        </div>
+    </div>
+</body>
+</html>
